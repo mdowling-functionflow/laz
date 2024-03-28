@@ -27,8 +27,13 @@ h1 {
 }
 
 .counter-statement {
-    font-size: 1.5em;
-    margin: 20px 0;
+    font-size: 24px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 2px solid #ffffff; /* White border */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .gif-container img {
@@ -48,3 +53,19 @@ h1 {
     }
 }
 
+@keyframes scrollLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.counter-statement {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 24px;
+    margin: 20px 0;
+    animation: scrollLeft 10s linear infinite;
+}
