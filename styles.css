@@ -34,6 +34,8 @@ h1 {
     background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
     border-radius: 10px;
     display: inline-block;
+    white-space: nowrap;
+    animation: scrollLeft 10s linear infinite; /* Scrolling animation */
 }
 
 .gif-container img {
@@ -60,12 +62,4 @@ h1 {
   to {
     transform: translateX(-100%);
   }
-}
-
-.counter-statement {
-    display: inline-block;
-    white-space: nowrap;
-    font-size: 24px;
-    margin: 20px 0;
-    animation: scrollLeft 10s linear infinite;
 }
